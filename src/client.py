@@ -19,7 +19,7 @@ class ZepelClient():
         >>> ZepelClient('subdomain')
         Traceback (most recent call last):
           ...
-        TypeError: __init__() missing 1 allow_none= positional argument: 'token'
+        TypeError: __init__() missing 1 required positional argument: 'token'
         """
         assert subdomain
         assert token
