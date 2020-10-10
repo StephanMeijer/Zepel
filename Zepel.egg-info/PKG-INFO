@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Zepel
+Version: 0.0.2
+Summary: A client for Zepel.io
+Home-page: https://github.com/StephanMeijer/Zepel
+Author: Stephan Meijer
+Author-email: zepelpy@stephanmeijer.com
+License: UNKNOWN
+Description: # Zepel for Python
+        
+        ## Example usage
+        
+        To be documented further soon.
+        
+        ```python
+        >>> client = ZepelClient("subdomain", 'api key')
+        >>> pr = ProjectsRepository(client)
+        >>> lr = ListsRepository(client)
+        >>> ir = ItemRepository(client)
+        
+        >>> items = [ [ ir.index(list=list) for list in lr.index(project=p) ] for p in pr.index() ]
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

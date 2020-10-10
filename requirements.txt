@@ -1,0 +1,2 @@
+requests==2.24.0
+marshmallow-dataclass==8.1.0
