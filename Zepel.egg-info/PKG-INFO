@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: Zepel
-Version: 0.0.2
+Version: 0.1.0
 Summary: A client for Zepel.io
 Home-page: https://github.com/StephanMeijer/Zepel
 Author: Stephan Meijer
@@ -14,8 +14,8 @@ Description: # Zepel for Python
         
         ```python
         >>> client = ZepelClient("subdomain", 'api key')
-        >>> pr = ProjectsRepository(client)
-        >>> lr = ListsRepository(client)
+        >>> pr = ProjectRepository(client)
+        >>> lr = ListRepository(client)
         >>> ir = ItemRepository(client)
         
         >>> items = [ [ ir.index(list=list) for list in lr.index(project=p) ] for p in pr.index() ]

@@ -4,7 +4,7 @@ from marshmallow_dataclass import dataclass
 from datetime import datetime
 from typing import Optional, List
 
-from url import get_url
+from .url import get_url
 
 class ZepelClient():
     subdomain: str = None
@@ -123,14 +123,14 @@ class ZepelItem():
 
     meta: dict
 
-class ProjectsRepository(Repository):
+class ProjectRepository(Repository):
     def index(self, **kwargs):
         return self.client.wrap_call(ZepelProject.Schema(), 'projects', **kwargs)
 
     def get(self, **kwargs):
         return self.client.wrap_call(ZepelProject.Schema(), 'project', **kwargs)
 
-class ListsRepository(Repository):
+class ListRepository(Repository):
     def index(self, **kwargs):
         return self.client.wrap_call(ZepelList.Schema(), 'lists', **kwargs)
 

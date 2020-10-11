@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Zepel", # Replace with your own username
-    version="0.0.2",
+    version="0.1.0",
     author="Stephan Meijer",
     author_email="zepelpy@stephanmeijer.com",
     description="A client for Zepel.io",

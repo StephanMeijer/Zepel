@@ -4,3 +4,6 @@ Zepel.egg-info/PKG-INFO
 Zepel.egg-info/SOURCES.txt
 Zepel.egg-info/dependency_links.txt
 Zepel.egg-info/top_level.txt
+zepel/__init__.py
+zepel/client.py
+zepel/url.py
