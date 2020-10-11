@@ -40,14 +40,7 @@ def get_url(name: str, **kwargs):
      ...
     KeyError: 'project_id'
     """
-
-    def url_as_function(url):
-        def func(**kwargs):
-            return url.format(**kwargs)
-
-        return func
-
-    return dict([ ( k, url_as_function(url) ) for k, url in [
+    return dict([ ( k, url.format ) for k, url in [
         ('projects', 'https://{subdomain}.zepel.io/api/v1/projects'),
         ('project', 'https://{subdomain}.zepel.io/api/v1/projects/{project_id}'),
         ('lists', 'https://{subdomain}.zepel.io/api/v1/projects/{project_id}/lists'),
